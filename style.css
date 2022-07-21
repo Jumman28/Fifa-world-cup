@@ -1,0 +1,280 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(209, 224, 237);
+}
+
+/* 1st section start */
+
+.top-container {
+    display: flex;
+    background-color: #161616;
+    border-radius: 20px;
+    width: 970px;
+    margin: 0 auto;
+    padding: 20px 100px 20px 100px;
+
+}
+
+.top-banner {
+    display: flex;
+    padding: 50px;
+
+}
+
+.half-width {
+    width: 50%;
+}
+
+h1 {
+    font-size: 35px;
+    margin: 0;
+}
+
+.half-width h1,
+p {
+    color: white;
+
+
+}
+
+.link-button {
+    background-color: rgb(255, 71, 141);
+    color: white;
+    padding: 10px 40px;
+    font-weight: 700;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.half-width img {
+    width: 80%;
+    margin-left: 80px;
+}
+
+/* <!-- second section start --> */
+header {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding: 20px 100px 20px 100px;
+}
+
+
+
+.button-box {
+    display: grid;
+    align-items: center;
+    padding-left: 20px;
+    background-color: black;
+    height: 312px;
+    width: 190px;
+    left: 140px;
+    top: 826px;
+    border-radius: 10px;
+    margin-top: 12px;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    background-color: white;
+    width: 174px;
+    height: 30px;
+}
+
+
+
+.upcoming-match-button {
+    font-size: 20px;
+    height: 30px;
+    width: 174px;
+    left: 209px;
+    top: 873px;
+    border-radius: 10px;
+
+}
+
+.group-button {
+    font-size: 20px;
+    height: 30px;
+    width: 174px;
+    left: 209px;
+    top: 873px;
+    border-radius: 10px;
+
+}
+
+.blog-button {
+    font-size: 20px;
+    background-color: red;
+    height: 30px;
+    width: 174px;
+    left: 209px;
+    top: 873px;
+    border-radius: 10px;
+
+}
+
+
+
+.section-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+
+
+}
+
+.match-videos {
+    background-color: aliceblue;
+    border: solid 1px gainsboro;
+    border-radius: 5px;
+    width: 312px;
+    height: 362px;
+    margin: 10px;
+}
+
+.transfer-button {
+    padding-left: 15px;
+}
+
+.transfer-live {
+    padding-left: 15px;
+}
+
+.icons {
+    display: flex;
+    color: rgb(169, 164, 164);
+
+}
+
+.times {
+    margin-left: 20px;
+    padding-right: 40px;
+
+}
+
+/* footer section */
+footer {
+    background-color: gray;
+    padding: 50px;
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+hr {
+    margin: 0 70px;
+    border: px solid whitesmoke;
+}
+
+.about-area {
+    color: whitesmoke;
+    display: flex;
+    padding-left: 50px;
+    justify-content: center;
+    gap: 40px;
+}
+
+
+
+h4 {
+    text-align: center;
+    color: white;
+}
+
+
+
+/*---------------- Meadia Queries---------------- */
+
+/*---------------- Mobile Devices ----------------*/
+@media only screen and (max-width:688px) {
+
+    .top-container {
+        padding: 0%;
+        margin: 0%;
+
+    }
+
+    .top-banner {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-columns: repeat(1, 1fr);
+        width: 390px;
+    }
+
+    .half-width {
+        width: 300px;
+        justify-content: center;
+    }
+
+    .player-image {
+        width: 5px;
+    }
+
+    .button-box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .section-2 {
+
+        grid-template-columns: repeat(1, 1fr);
+        width: 450px;
+    }
+
+    header {
+        grid-template-columns: repeat(1, 1fr);
+        width: 390px;
+        padding: 0%;
+    }
+
+    .footer {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .about-area {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* mobile devices end */
+
+    /* ------ tablet  devices start------ */
+
+    @media only screen and (max-width:1023px) and (min-width:688px) {
+        header {
+            grid-template-columns: repeat(1, 1fr);
+            width: 912px;
+            padding: 0%;
+        }
+
+        .top-container {
+            padding: 0%;
+            margin: 0%;
+            width: 912px;
+        }
+
+        .top-banner {
+            grid-template-columns: 25% 75%;
+            display: grid;
+            width: 912px;
+        }
+
+        .section-1 {
+            gap: 10%;
+        }
+
+        .button-box {
+            padding: 7%;
+        }
+
+        .section-2 {
+
+            grid-template-columns: repeat(2, 1fr);
+            width: 912px;
+        }
+    }
